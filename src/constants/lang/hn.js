@@ -1,0 +1,23 @@
+export default {
+HOME:"होम ",
+LOGIN:"लॉग इन करें",
+LOGOUT:"लॉग आउट",
+NAME:"नाम",
+PHONE:"फ़ोन",
+AGE:"आयु",
+ADDRESS:"पता",
+ROLL_NUMBER:"रोल नंबर",
+ENTER_NAME:"नाम दर्ज करें",
+ENTER_PHONE:"फ़ोन दर्ज करें",
+ENTER_AGE:"आयु दर्ज करें",
+SUBMIT:"प्रस्तुत",
+UPDATE:"अपडेट ",
+ENTER_ADDRESS:"पता दर्ज करें",
+ENTER_ROLL_NUMBER:"रोल नंबर दर्ज करें",
+EMAIL_NUMBER:"ईमेल या नंबर दर्ज करें",
+PASSWORD:"पासवर्ड दर्ज करें",
+VALID_EMAIL_NUMBER:"मान्य ईमेल या नंबर दर्ज करें",
+VALID_PASSWORD:"मान्य पासवर्ड दर्ज करें",
+PASSWORD_ERROR:"* पासवर्ड कम से कम 8 अक्षरों का होना चाहिए \n * पासवर्ड में अपर और लोअर केस और अंक होने चाहिए",
+
+};
