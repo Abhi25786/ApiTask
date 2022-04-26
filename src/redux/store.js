@@ -1,8 +1,11 @@
-import {applyMiddleware, legacy_createStore} from 'redux';
-import thunk from 'redux-thunk';
-import reducer from './reducers';
+
+
+   
+import { createStore, applyMiddleware } from "redux";
+import rootReducer from "./reducers";
+import thunk from "redux-thunk"
 const middlewares = [thunk];
 
-export default legacy_createStore(reducer,applyMiddleware(...middlewares) );
+const store = createStore(rootReducer, applyMiddleware(...middlewares))
 
-// import { legacy_createStore } from "redux";
+export default store

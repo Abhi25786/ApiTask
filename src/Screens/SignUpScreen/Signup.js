@@ -34,12 +34,20 @@ function Signup() {
     deviceType,
   } = state;
   const updateArray = data => setState(state => ({...state, ...data}));
-
+  // ------------------------SIGNUP----------------------------//
   const signUP = async () => {
     console.log(state, 'your state');
 
     let apiData = {
-      state,
+      first_name:fName,
+      last_name:lName,
+      email:email,
+      phone:phone,
+      phone_code:phoneCode,
+      country_code:countryCode,
+      device_token:deviceToken,
+      device_type:deviceType,
+      password:pass
     };
     try {
       const res = await actions.signUp(apiData);
@@ -51,7 +59,7 @@ function Signup() {
     }
   };
 
-  // ------------------------SIGNUP----------------------------//
+
 
   return (
     <SafeAreaView style={styles.MainContaine}>
@@ -113,7 +121,7 @@ function Signup() {
         />
         <Buttoncustam
           name={en.SIGNUP}
-          stylbtn={styles.LoginButton}
+          stylbtn={styles.Signupuserbtn}
           onpress={signUP}
         />
       </ScrollView>

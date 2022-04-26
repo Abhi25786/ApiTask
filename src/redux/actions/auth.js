@@ -4,7 +4,7 @@ import store from '../store';
 import types from '../types';
 const { dispatch } = store;
 
-const saveUserData = (data) => {
+ export const saveUserData = (data) => {
   dispatch({
     type: types.LOGIN,
     payload: data,
@@ -29,4 +29,11 @@ export const login = (data) => {
         reject(error);
       });
   });
+};
+export const logout = () => {
+
+  dispatch({
+    type: types.USER_LOGOUT,
+
+  })
 };
